@@ -1,0 +1,78 @@
+body{
+    background-color:aliceblue;
+}
+
+#supertitel h2{
+    text-align: center;
+    font-family: 'Roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2.5rem;
+    color: darkslategray;
+}
+
+
+#choicebox{
+    display:flex;
+    justify-content: center;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: row;
+    height: 750px;
+    align-items: center;
+    
+}
+
+.choice{
+    font-family: 'Roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    padding: 1%;
+    margin-left: 5px;
+    margin-right: 5px;
+    height: 500px;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    
+}
+
+.choice > a{
+    color: darkslategray;
+    text-decoration: none;
+    text-align: center;
+}
+
+.choice > a > h2{
+    margin: 0%;
+    padding: 5%;
+    font-size: 2rem;
+    background-color:aliceblue;
+}
+
+.choice > a > .choice-text{
+    position: absolute;
+    z-index: -1;
+    transition: all 0.3s ease;
+    bottom: 50%;
+    right: 3%; 
+    left: 3%;
+    color: lightslategray;
+    opacity: 0%;
+}
+
+.choice > a >.choice-image{
+    position:relative;
+    flex-shrink: 1;
+    flex-basis: 40%;
+    width: 100%;
+    margin-bottom: 0%;
+    padding-bottom: 0%;
+}
+
+.choice:hover .choice-text{
+    bottom: 5%;
+    opacity: 100%;
+}
+
+#choicebox .choice:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+}
